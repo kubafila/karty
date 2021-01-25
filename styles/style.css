@@ -1,0 +1,343 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: #35654d;
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+      margin-top: 15px;
+      margin-bottom: -15px;
+      color: #000;
+      cursor: pointer;
+      position: relative;
+      z-index: 999;
+}
+main{
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+
+
+  display:grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+  perspective: 600px;
+
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  
+
+  
+}
+.card{
+    margin: 1vh 1vw;
+  cursor: pointer;
+
+
+
+ transform: rotateY(0deg) translateX(-100%);
+       
+        transform-style: preserve-3d;
+    transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+    
+      transform-origin: center left;
+      min-width: 50px;
+      min-height: 100px;
+
+      position: relative;
+      
+}
+.card--show{
+  
+        transform: rotateY(180deg) translateX(-100%);
+}
+.card:hover{
+  z-index: 2;
+  transform: scale(2) rotateY(180deg) translateX(-100%);
+
+  
+      
+}
+.card::before,
+.card::after{
+  position: absolute;
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  min-width: 20px;
+  min-height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 3;
+
+}
+
+.card__face{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+
+}
+.card__face--front{
+  background-image: url('../img/card-back.png');
+
+}
+
+.card__face--back{
+
+    transform: rotateY(180deg);
+
+}
+
+
+
+
+
+
+
+/*
+Responsive CSS Sprite created using: https://responsive-css.us/
+*/
+
+
+
+[data-number="1"] {
+  background-image: url("../img/card (10).svg");
+}
+
+[data-number="2"] {
+  background-image: url("../img/card (2).svg");
+}
+
+[data-number="3"] {
+  background-image: url("../img/card (3).svg");
+}
+
+[data-number="4"] {
+  background-image: url("../img/card (4).svg");
+}
+
+[data-number="5"] {
+  background-image: url("../img/card (5).svg");
+}
+
+[data-number="6"] {
+  background-image: url("../img/card (6).svg");
+}
+
+[data-number="7"] {
+  background-image: url("../img/card (7).svg");
+}
+
+[data-number="8"] {
+  background-image: url("../img/card (8).svg");
+}
+
+[data-number="9"] {
+  background-image: url("../img/card (9).svg");
+}
+
+[data-number="10"] {
+  background-image: url("../img/card (1).svg");
+}
+
+[data-number="11"] {
+  background-image: url("../img/card (11).svg");
+}
+
+[data-number="12"] {
+  background-image: url("../img/card (12).svg");
+}
+
+[data-number="13"] {
+  background-image: url("../img/card (13).svg");
+}
+
+[data-number="14"] {
+  background-image: url("../img/card (23).svg");
+}
+
+[data-number="15"] {
+  background-image: url("../img/card (15).svg");
+}
+
+[data-number="16"] {
+  background-image: url("../img/card (16).svg");
+}
+
+[data-number="17"] {
+  background-image: url("../img/card (17).svg");
+}
+
+[data-number="18"] {
+  background-image: url("../img/card (18).svg");
+}
+
+[data-number="19"] {
+  background-image: url("../img/card (19).svg");
+}
+
+[data-number="20"] {
+  background-image: url("../img/card (20).svg");
+}
+
+[data-number="21"] {
+  background-image: url("../img/card (21).svg");
+}
+
+[data-number="22"] {
+  background-image: url("../img/card (22).svg");
+}
+
+[data-number="23"] {
+  background-image: url("../img/card (14).svg");
+}
+
+[data-number="24"] {
+  background-image: url("../img/card (24).svg");
+}
+
+[data-number="25"] {
+  background-image: url("../img/card (25).svg");
+}
+
+[data-number="26"] {
+  background-image: url("../img/card (26).svg");
+}
+
+[data-number="27"] {
+  background-image: url("../img/card (36).svg");
+}
+
+[data-number="28"] {
+  background-image: url("../img/card (28).svg");
+}
+
+[data-number="29"] {
+  background-image: url("../img/card (29).svg");
+}
+
+[data-number="30"] {
+  background-image: url("../img/card (30).svg");
+}
+
+[data-number="31"] {
+  background-image: url("../img/card (31).svg");
+}
+
+[data-number="32"] {
+  background-image: url("../img/card (32).svg");
+}
+
+[data-number="33"] {
+  background-image: url("../img/card (33).svg");
+}
+
+[data-number="34"] {
+  background-image: url("../img/card (34).svg");
+}
+
+[data-number="35"] {
+  background-image: url("../img/card (35).svg");
+}
+
+[data-number="36"] {
+  background-image: url("../img/card (27).svg");
+}
+
+[data-number="37"] {
+  background-image: url("../img/card (37).svg");
+}
+
+[data-number="38"] {
+  background-image: url("../img/card (38).svg");
+}
+
+[data-number="39"] {
+  background-image: url("../img/card (39).svg");
+}
+
+[data-number="40"] {
+  background-image: url("../img/card (49).svg");
+}
+
+[data-number="41"] {
+  background-image: url("../img/card (41).svg");
+}
+
+[data-number="42"] {
+  background-image: url("../img/card (42).svg");
+}
+
+[data-number="43"] {
+  background-image: url("../img/card (43).svg");
+}
+
+[data-number="44"] {
+  background-image: url("../img/card (44).svg");
+}
+
+[data-number="45"] {
+  background-image: url("../img/card (45).svg");
+}
+
+[data-number="46"] {
+  background-image: url("../img/card (46).svg");
+}
+
+[data-number="47"] {
+  background-image: url("../img/card (47).svg");
+}
+
+[data-number="48"] {
+  background-image: url("../img/card (48).svg");
+}
+
+[data-number="49"] {
+  background-image: url("../img/card (40).svg");
+}
+
+[data-number="50"] {
+  background-image: url("../img/card (50).svg");
+}
+
+[data-number="51"] {
+  background-image: url("../img/card (51).svg");
+}
+
+[data-number="52"] {
+  background-image: url("../img/card (52).svg");
+}
+
+
+
+
+
+
+@media(min-width:1000px){
+  main{
+      grid-template-columns: repeat(13, minmax(74px, 1fr));
+      grid-template-rows: repeat(4, minmax(107px, 1fr));
+  }
+  .card:hover {
+      transform: scale(1.5) rotateY(180deg) translateX(-100%);
+
+  }
+}
+
