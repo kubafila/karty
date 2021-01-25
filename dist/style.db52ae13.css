@@ -1,0 +1,346 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: #35654d;
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+      margin-top: 15px;
+      margin-bottom: -15px;
+      color: #000;
+      cursor: pointer;
+      position: relative;
+      z-index: 999;
+}
+main{
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+
+
+  display:grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+  perspective: 600px;
+
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  
+
+  
+}
+.card{
+    margin: 1vh 1vw;
+  cursor: pointer;
+
+
+
+ transform: rotateY(0deg) translateX(-100%);
+       
+        transform-style: preserve-3d;
+    transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+    
+      transform-origin: center left;
+      min-width: 50px;
+      min-height: 100px;
+
+      position: relative;
+      
+}
+.card--show{
+  
+        transform: rotateY(180deg) translateX(-100%);
+}
+.card:hover{
+  z-index: 2;
+  transform: scale(2) rotateY(180deg) translateX(-100%);
+
+  
+      
+}
+.card::before,
+.card::after{
+  position: absolute;
+  content: "";
+  width: 2vw;
+  height: 2vw;
+  min-width: 20px;
+  min-height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 3;
+
+}
+
+.card__face{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+
+}
+.card__face--front{
+  background-image: url('card-back.b56119d8.png');
+
+}
+
+.card__face--back{
+
+    transform: rotateY(180deg);
+
+}
+
+
+
+
+
+
+
+/*
+Responsive CSS Sprite created using: https://responsive-css.us/
+*/
+
+
+
+[data-number="1"] {
+  background-image: url("card (10).077d47fd.svg");
+}
+
+[data-number="2"] {
+  background-image: url("card (2).4c7c5ad9.svg");
+}
+
+[data-number="3"] {
+  background-image: url("card (3).50550d41.svg");
+}
+
+[data-number="4"] {
+  background-image: url("card (4).156244e1.svg");
+}
+
+[data-number="5"] {
+  background-image: url("card (5).67e8cfb2.svg");
+}
+
+[data-number="6"] {
+  background-image: url("card (6).bbe6938d.svg");
+}
+
+[data-number="7"] {
+  background-image: url("card (7).dc5e515f.svg");
+}
+
+[data-number="8"] {
+  background-image: url("card (8).bc766c0c.svg");
+}
+
+[data-number="9"] {
+  background-image: url("card (9).1de98fd9.svg");
+}
+
+[data-number="10"] {
+  background-image: url("card (1).2dc64805.svg");
+}
+
+[data-number="11"] {
+  background-image: url("card (11).7a0222eb.svg");
+}
+
+[data-number="12"] {
+  background-image: url("card (12).564f38ed.svg");
+}
+
+[data-number="13"] {
+  background-image: url("card (13).32807dce.svg");
+}
+
+[data-number="14"] {
+  background-image: url("card (23).2fc1348f.svg");
+}
+
+[data-number="15"] {
+  background-image: url("card (15).7d85c357.svg");
+}
+
+[data-number="16"] {
+  background-image: url("card (16).54df3975.svg");
+}
+
+[data-number="17"] {
+  background-image: url("card (17).91003a45.svg");
+}
+
+[data-number="18"] {
+  background-image: url("card (18).278d12cd.svg");
+}
+
+[data-number="19"] {
+  background-image: url("card (19).07441c44.svg");
+}
+
+[data-number="20"] {
+  background-image: url("card (20).6149c6f7.svg");
+}
+
+[data-number="21"] {
+  background-image: url("card (21).7142c6ea.svg");
+}
+
+[data-number="22"] {
+  background-image: url("card (22).c86182f6.svg");
+}
+
+[data-number="23"] {
+  background-image: url("card (14).c25eaab9.svg");
+}
+
+[data-number="24"] {
+  background-image: url("card (24).c1c8ad4d.svg");
+}
+
+[data-number="25"] {
+  background-image: url("card (25).8fc4c885.svg");
+}
+
+[data-number="26"] {
+  background-image: url("card (26).cddb45dd.svg");
+}
+
+[data-number="27"] {
+  background-image: url("card (36).6fb0f4e6.svg");
+}
+
+[data-number="28"] {
+  background-image: url("card (28).14e8ab3f.svg");
+}
+
+[data-number="29"] {
+  background-image: url("card (29).84ea1dab.svg");
+}
+
+[data-number="30"] {
+  background-image: url("card (30).9d5e8918.svg");
+}
+
+[data-number="31"] {
+  background-image: url("card (31).5e4bf525.svg");
+}
+
+[data-number="32"] {
+  background-image: url("card (32).091e2ec4.svg");
+}
+
+[data-number="33"] {
+  background-image: url("card (33).18287c1d.svg");
+}
+
+[data-number="34"] {
+  background-image: url("card (34).9e588108.svg");
+}
+
+[data-number="35"] {
+  background-image: url("card (35).377ae82d.svg");
+}
+
+[data-number="36"] {
+  background-image: url("card (27).23556910.svg");
+}
+
+[data-number="37"] {
+  background-image: url("card (37).4e7238c0.svg");
+}
+
+[data-number="38"] {
+  background-image: url("card (38).802303ec.svg");
+}
+
+[data-number="39"] {
+  background-image: url("card (39).44c16c21.svg");
+}
+
+[data-number="40"] {
+  background-image: url("card (49).6d26720f.svg");
+}
+
+[data-number="41"] {
+  background-image: url("card (41).b020cf70.svg");
+}
+
+[data-number="42"] {
+  background-image: url("card (42).2bf13b07.svg");
+}
+
+[data-number="43"] {
+  background-image: url("card (43).ec4c36b0.svg");
+}
+
+[data-number="44"] {
+  background-image: url("card (44).bfb3466c.svg");
+}
+
+[data-number="45"] {
+  background-image: url("card (45).09752b44.svg");
+}
+
+[data-number="46"] {
+  background-image: url("card (46).c2aeff48.svg");
+}
+
+[data-number="47"] {
+  background-image: url("card (47).c696c0e6.svg");
+}
+
+[data-number="48"] {
+  background-image: url("card (48).bf72806e.svg");
+}
+
+[data-number="49"] {
+  background-image: url("card (40).9f50714d.svg");
+}
+
+[data-number="50"] {
+  background-image: url("card (50).0b9f0bdb.svg");
+}
+
+[data-number="51"] {
+  background-image: url("card (51).2eb0b658.svg");
+}
+
+[data-number="52"] {
+  background-image: url("card (52).5d333735.svg");
+}
+
+
+
+
+
+
+@media(min-width:1000px){
+  main{
+      grid-template-columns: repeat(13, minmax(74px, 1fr));
+      grid-template-rows: repeat(4, minmax(107px, 1fr));
+  }
+  .card:hover {
+      transform: scale(1.5) rotateY(180deg) translateX(-100%);
+
+  }
+}
+
+
+
+/*# sourceMappingURL=style.db52ae13.css.map */
